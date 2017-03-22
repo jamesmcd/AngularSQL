@@ -1,0 +1,20 @@
+<htm ng-app="sqlJSON">
+
+    <head>
+        <title>MYSQL to JSON</title>
+        <link rel="stylesheet" type="text/css" src="assets/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <h1>MYSQL to JSON</h1>
+        <div ng-controller="DataCtrl">
+            <ul ng-show="names">
+                <li ng-repeat="x in names"><span>{{x.Name}}</span> <span>{{x.Phone}}</span></li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="assets/js/angular.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+
+    </html>
